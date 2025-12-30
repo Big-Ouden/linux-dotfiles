@@ -16,11 +16,11 @@
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
+    "hyprland/language",
     "network",
     "pulseaudio",
     "cpu",
-    "battery",
-    "hyorland/layout"
+    "battery"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -181,5 +181,11 @@
   "tray": {
     "icon-size": 12,
     "spacing": 17
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "US",
+    "format-ca(fr)": "FR-CA",
+    "format-fr": "FR"
   }
 }
