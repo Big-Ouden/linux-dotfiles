@@ -198,6 +198,8 @@
   "hyprland/language": {
     "format": "{}",
     "format-en": "UK",
+    "format-mac_custom": "CTM",
+    "format-custom": "CTM",
     "format-ca(fr)": "FR-CA",
     "format-fr": "FR"
   }
