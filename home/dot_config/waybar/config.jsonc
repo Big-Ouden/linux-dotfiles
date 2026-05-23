@@ -204,7 +204,7 @@
     "format-fr": "FR"
   },
   "custom/lang-tz": {
-    "exec": "$HOME/.config/waybar/scripts/lang-or-tz.sh",
+    "exec": "$HOME/.config/waybar/scripts/lang.sh",
     "interval": 2,
     "tooltip": false
   }
