@@ -205,7 +205,7 @@
   },
   "custom/lang-tz": {
     "exec": "$HOME/.config/waybar/scripts/lang.sh",
-    "interval": 2,
+    "interval": 1,
     "tooltip": false
   }
 }
