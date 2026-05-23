@@ -16,7 +16,7 @@
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
-    "hyprland/language",
+    "custom/lang-tz",
     "network",
     "pulseaudio",
     "cpu",
@@ -202,5 +202,10 @@
     "format-custom": "CTM",
     "format-ca(fr)": "FR-CA",
     "format-fr": "FR"
+  },
+  "custom/lang-tz": {
+    "exec": "$HOME/.config/waybar/scripts/lang-or-tz.sh",
+    "interval": 2,
+    "tooltip": false
   }
 }
