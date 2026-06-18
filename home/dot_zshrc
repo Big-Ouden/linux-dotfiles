@@ -128,5 +128,6 @@ source $ZSH_CUSTOM/functions.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
+export PATH=$PATH:$HOME/.cargo/bin
 
 #. "$HOME/.local/share/../bin/env"
