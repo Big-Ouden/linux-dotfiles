@@ -3,9 +3,18 @@
 input {
   # Use multiple keyboard layouts and switch between them with Left Alt + Right Alt
   # kb_layout = us,dk,eu
+  {{ if eq .chezmoi.hostname "freya" -}}
+  
+  kb_layout = custom, fr
+  kb_variant = mac_custom,
+  kb_options = grp:ctrl_space_toggle, compose:ralt
+  
+  {{ else -}}
+  
   kb_layout = fr, us
   kb_options = grp:ctrl_space_toggle
-
+  
+  {{ end -}}
   # Change speed of keyboard repeat
   repeat_rate = 40
   repeat_delay = 600
