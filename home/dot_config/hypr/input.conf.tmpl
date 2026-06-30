@@ -5,8 +5,8 @@ input {
   # kb_layout = us,dk,eu
   {{ if eq .chezmoi.hostname "freya" -}}
   
-  kb_layout = custom, fr
-  kb_variant = mac_custom,
+  kb_layout = custom, custom, fr
+  kb_variant = mac_custom, ergol
   kb_options = grp:ctrl_space_toggle, compose:ralt
   
   {{ else -}}

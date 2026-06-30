@@ -8,6 +8,7 @@ image/bmp=imv.desktop
 image/tiff=imv.desktop
 application/pdf=org.gnome.Evince.desktop
 text/html=firefox.desktop
+text/ts=nvim.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
 x-scheme-handler/about=firefox.desktop
