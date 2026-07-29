@@ -92,6 +92,7 @@ plugins=(
   )
 
 source $ZSH/oh-my-zsh.sh
+export ZSH_CUSTOM="$HOME/.config/zsh_custom"
 #source ~/.local/share/../bin
 # User configuration
 
