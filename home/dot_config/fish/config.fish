@@ -130,64 +130,67 @@ end
 ##################
 ### Aliases    ###
 ##################
-# ls replacements
-alias ls='eza -al --color=always --group-directories-first --icons'
-alias la='eza -a --color=always --group-directories-first --icons'
-alias ll='eza -l --color=always --group-directories-first --icons'
-alias lt='eza -aT --color=always --group-directories-first --icons'
-alias l.='eza -a | grep -e "^\."'
 
-# System helpers
-alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias tarnow='tar -acf '
-alias untar='tar -zxvf '
-alias wget='wget -c '
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
+source $HOME/.config/fish/aliases.fish
 
-# Arch helpers
-alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'
-alias update='sudo pacman -Syu'
-alias mirror="sudo cachyos-rate-mirrors"
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
-
-# Shortcuts
-alias apt='man pacman'
-alias apt-get='man pacman'
-alias please='sudo'
-alias jctl="journalctl -p 3 -xb"
-alias nf='neofetch'
-alias ff='fastfetch'
-alias q='exit'
-alias h='history'
-alias c='clear'
-
-# Git shortcuts
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gcl='git clone'
-alias gl='git log --oneline'
-alias gd='git diff'
-alias gpush='git push'
-alias gpull='git pull'
-
-# System control
-alias wifi='nmtui'
-alias install='yay -S'
-alias update='yay -Syu'
-alias search='yay -Ss'
-alias lsearch='yay -Qs'
-alias remove='yay -Rns'
-alias shutdown='systemctl poweroff'
-alias du='dust'
-
+# # ls replacements
+# alias ls='eza -al --color=always --group-directories-first --icons'
+# alias la='eza -a --color=always --group-directories-first --icons'
+# alias ll='eza -l --color=always --group-directories-first --icons'
+# alias lt='eza -aT --color=always --group-directories-first --icons'
+# alias l.='eza -a | grep -e "^\."'
+#
+# # System helpers
+# alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+# alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+# alias tarnow='tar -acf '
+# alias untar='tar -zxvf '
+# alias wget='wget -c '
+# alias psmem='ps auxf | sort -nr -k 4'
+# alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+# alias ..='cd ..'
+# alias ...='cd ../..'
+# alias ....='cd ../../..'
+# alias .....='cd ../../../..'
+# alias ......='cd ../../../../..'
+#
+# # Arch helpers
+# alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'
+# alias update='sudo pacman -Syu'
+# alias mirror="sudo cachyos-rate-mirrors"
+# alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
+#
+# # Shortcuts
+# alias apt='man pacman'
+# alias apt-get='man pacman'
+# alias please='sudo'
+# alias jctl="journalctl -p 3 -xb"
+# alias nf='neofetch'
+# alias ff='fastfetch'
+# alias q='exit'
+# alias h='history'
+# alias c='clear'
+#
+# # Git shortcuts
+# alias gs='git status'
+# alias ga='git add'
+# alias gc='git commit'
+# alias gcl='git clone'
+# alias gl='git log --oneline'
+# alias gd='git diff'
+# alias gpush='git push'
+# alias gpull='git pull'
+#
+# # System control
+# alias wifi='nmtui'
+# alias install='yay -S'
+# alias update='yay -Syu'
+# alias search='yay -Ss'
+# alias lsearch='yay -Qs'
+# alias remove='yay -Rns'
+# alias shutdown='systemctl poweroff'
+# alias du='dust'
+#
 ###################
 ### Environment ###
 ###################
@@ -209,3 +212,5 @@ function fish_user_key_bindings
     bind shift-delete kill-word
     bind shift-backspace backward-kill-word
 end
+
+zoxide init fish | source
