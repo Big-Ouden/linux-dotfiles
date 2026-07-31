@@ -32,7 +32,7 @@ end
 ### Key Bindings  ###
 #####################
 # Enable vim bindings
-set -U fish_key_bindings fish_vi_key_bindings
+# set -U fish_key_bindings fish_vi_key_bindings
 
 # Always block cursor (disable cursor switching)
 function fish_mode_prompt
@@ -203,4 +203,9 @@ if test -z "$DISPLAY"
     if test -n "$display"
         set -gx DISPLAY (string replace 'DISPLAY=' '' $display)
     end
+end
+
+function fish_user_key_bindings
+    bind shift-delete kill-word
+    bind shift-backspace backward-kill-word
 end

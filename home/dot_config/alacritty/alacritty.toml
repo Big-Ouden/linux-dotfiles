@@ -126,3 +126,4 @@ action = "ClearSelection"
 key = "Key0"
 mods = "Control"
 action = "ResetFontSize"
+
