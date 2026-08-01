@@ -17,7 +17,7 @@ output "eDP-1" {
 input {
     keyboard {
         xkb {
-            layout "fr"
+            layout "us"
             options "caps:escape"
         }
     }
